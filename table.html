@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 2 with Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+
+    <h1 class="text-2xl font-bold mb-4">Fruits Information</h1>
+    <table class="min-w-full bg-white border border-gray-300">
+        <thead>
+            <tr class="bg-gray-200">
+                <th class="py-2 px-4 border">Name</th>
+                <th class="py-2 px-4 border">Color</th>
+                <th class="py-2 px-4 border">Taste</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="py-2 px-4 border">Apple</td>
+                <td class="py-2 px-4 border">Red</td>
+                <td class="py-2 px-4 border">Sweet</td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 border">Banana</td>
+                <td class="py-2 px-4 border">Yellow</td>
+                <td class="py-2 px-4 border">Sweet</td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 border">Lemon</td>
+                <td class="py-2 px-4 border">Yellow</td>
+                <td class="py-2 px-4 border">Sour</td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 border">Grapes</td>
+                <td class="py-2 px-4 border">Purple</td>
+                <td class="py-2 px-4 border">Sweet</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="text-xl font-semibold mt-6 mb-2">My Favorite Movies</h2>
+    <ul class="list-disc pl-5">
+        <li>The Shawshank Redemption</li>
+        <li>The Godfather</li>
+        <li>The Dark Knight</li>
+        <li>Pulp Fiction</li>
+        <li>The Lord of the Rings: The Return of the King</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6 mb-2">My Top Priorities for the Week</h2>
+    <ol class="list-decimal pl-5">
+        <li>Complete the HTML assignment</li>
+        <li>Prepare for the upcoming exam</li>
+        <li>Grocery shopping</li>
+    </ol>
+
+    <h2 class="text-xl font-semibold mt-6 mb-2">Contact Form</h2>
+    <form id="contactForm" class="bg-white p-4 rounded shadow-md">
+        <label for="name" class="block mb-2">Name:</label>
+        <input type="text" id="name" name="name" minlength="3" maxlength="50" required class="border border-gray-300 p-2 w-full mb-4">
+
+        <label for="email" class="block mb-2">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required class="border border-gray-300 p-2 w-full mb-4">
+
+        <label class="block mb-2">Gender:</label>
+        <div class="mb-4">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male" class="mr-4">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female" class="mr-4">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </div>
+
+        <label for="age" class="block mb-2">Age Range:</label>
+        <select id="age" name="age" required class="border border-gray-300 p-2 w-full mb-4">
+            <option value="">Select your age range</option>
+            < option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-44">35-44</option>
+            <option value="45-54">45-54</option>
+            <option value="55-64">55-64</option>
+            <option value="65+">65+</option>
+        </select>
+
+        <button type="submit" class="bg-blue-500 text-white p-2 rounded">Submit</button>
+    </form>
+</body>
+</html>
